@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <head>
+        <title>Royal Apps Survey</title>
+        <link rel="stylesheet" type="text/css" href="/assets/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Royal Apps Experience Survey Results</h1>
+            <p>Data from the survey is displayed below</p>
+        </div>
+
+        <div id="results">
+            <% for (var question in results){ %>
+                <div class="question">
+                    <h2><%= question %></h2>
+                    <% for (var answer in results[question]){ %>
+                        <p><%= answer %>: <%= results[question][answer] %></p>
+                    <% } %>    
+                </div>
+            <% } %>
+        </div>
+        <br>
+    </body>
+    <footer>Copyright © 2020 Justin Proulx</footer>
+</html>

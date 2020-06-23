@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <title>Royal Apps Survey</title>
+        <link rel="stylesheet" type="text/css" href="/assets/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Royal Apps Experience Survey</h1>
+            <p>Please visit <a href="https://www.royalapps.xyz/">Royal Apps</a> before taking this survey</p>
+        </div>
+
+        <a href="https://www.royalapps.xyz/"><img src="/assets/ss.png"></a>
+
+        <form action="/" method="post">
+            <div class="question">
+                Do you prefer websites with vibrant colors or neutral colors?: <br>
+                <input type="radio" name="q1" value="Vibrant">Vibrant<br>
+                <input type="radio" name="q1" value="Neutral">Neutral<br>
+                <input type="radio" name="q1" value="Mix">A mix of both<br>
+            </div>
+
+            <div class="question">
+                Were you able to find the page you desired during your visit?: <br>
+                <input type="radio" name="q2" value="Y">Yes<br>
+                <input type="radio" name="q2" value="N">No<br>
+            </div>
+
+            <div class="question">
+                If you answered no, what page did you want to find?: <br>
+                <div class="textAreaContainer">
+                    <input type="text" name="q3"><br>
+                </div>
+            </div>
+
+            <div class="question">
+                Which of the following of our products do you recognize?: <br>
+
+                <input type="checkbox" value="impeached" name="q4">
+                <label for="1"> Impeached: Be The President</label><br>
+                <input type="checkbox" value="jellyfish" name="q4">
+                <label for="2"> Jellyfish</label><br>
+                <input type="checkbox" value="realkeys" name="q4">
+                <label for="3"> RealKeys</label><br>
+                <input type="checkbox" value="chs" name="q4">
+                <label for="4"> Clean Home Screen</label><br>
+                <input type="checkbox" value="speedmath" name="q4">
+                <label for="5"> Speed Math</label><br>
+                <input type="checkbox" value="speedmath" name="q4">
+                <label for="6"> Portail des Élèves</label><br>
+                <input type="checkbox" value="zooted" name="q4">
+                <label for="7"> Zooted</label><br>
+            </div>
+
+            <div class="question">
+                How much do you agree with the following statement? "Royal Apps provides adequate support methods": <br>
+                <input type="radio" name="q5">Strongly agree<br>
+                <input type="radio" name="q5">Somewhat agree<br>
+                <input type="radio" name="q5">Neutral<br>
+                <input type="radio" name="q5">Somewhat disagree<br>
+                <input type="radio" name="q5">Strongly disagree<br>
+            </div>
+
+            <div class="question">
+                With other sites, which is your preferred method for requesting support?: <br>
+                <select name="q6">
+                    <option value="twitter">Twitter</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+                If you answered "Other", please specify: <br>
+                <div class="textAreaContainer">
+                    <input type="text" name="q7"><br>
+                </div>
+            </div>
+            
+            <div class="question">
+                Do you have any additional comments or criticisms about the Royal Apps website?: <br>
+                <div class="textAreaContainer">
+                    <input type="text" name="q8"><br>
+                </div>
+            </div>
+
+            <p>Thank you for completing this survey!</p>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+    </body>
+    <footer>Copyright © 2020 Justin Proulx</footer>
+</html>
